@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Relay Watches Store</title>
+		<title>Relay Watches Store | Product Details</title>
 
 		<!-- Google fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,14 +23,135 @@
 	<body>
 		<!-- Navigation -->
 		<nav class="nav">
-			<div class="nav_center">
+			<div class="nav__center container">
 				<div class="nav__logo">
 					<h1>RELY <span>Watch Store</span></h1>
 				</div>
+
+				<ul class="nav__list">
+					<span>
+						<i class="bx bxs-watch"></i>
+					</span>
+
+					<div class="cart__icon">
+						<i class="bx bx-cart"></i>
+						<span class="item__total">0</span>
+					</div>
+				</ul>
 			</div>
 		</nav>
 
-		<script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+		<!-- Filter -->
+		<section class="filter">
+			<div class="grid">
+				<div class="div">
+					<label for="search"
+						><span><i class="bx bx-search"></i></span
+					></label>
+					<input
+						type="text"
+						id="search"
+						placeholder="Search your favorite watch..."
+					/>
+				</div>
+				<div class="category">
+					<select name="" id="category" onclick="categoryValue()">
+						<option value="">Branch</option>
+						<option value="rolex">Rolex</option>
+						<option value="omega">Omega</option>
+						<option value="audemars">Audemars</option>
+						<option value="rolexday">Rolex Day</option>
+						<option value="hublot">Hublot</option>
+						<option value="tag">Tag Heuer</option>
+					</select>
+				</div>
+			</div>
+		</section>
+
+		<!-- Products -->
+		<section class="products">
+			<div class="products__center">
+				<div class="product">
+					<div class="image__container">
+						<img
+						src="https://cdn4.chrono24.com/images/topmodels/2875-7wlcl6ogfoc0qxg22ox6up9m-Original.png?auto=compress&amp;h=305"
+						alt=" alt="">
+					</div>
+					<div class="products__footer">
+						<h1>Original Watches</h1>
+						<div class="rating">
+							<span>
+								<i class="bx bxs-star"></i>
+							</span>
+							<span>
+								<i class="bx bxs-star"></i>
+							</span>
+							<span>
+								<i class="bx bxs-star"></i>
+							</span>
+							<span>
+								<i class="bx bxs-star"></i>
+							</span>
+							<span>
+								<i class="bx bxs-star"></i>
+							</span>
+						</div>
+						<div class="price">$102.00</div>
+					</div>
+					<div class="bottom">
+						<div class="btn__group">
+							<a href="#" class="btn addToCart">Add to cart</a>
+							<a href="product-details.html" class="btn view">View</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Shoping cart -->
+
+		<section class="cart__overlay">
+			<div class="cart">
+				<span class="close__cart">
+					<i class="bx bx-x"></i>
+				</span>
+				<h1>Items in Your Cart</h1>
+
+				<div class="cart__center">
+					<!-- <div class="cart__item">
+						<img
+							src="https://cdn4.chrono24.com/images/topmodels/2875-7wlcl6ogfoc0qxg22ox6up9m-Original.png?auto=compress&amp;h=305"
+							alt=""
+						/>
+						<div>
+							<h3>Original Watches</h3>
+							<p class="price">$122</p>
+						</div>
+						<div>
+							<span>
+								<i class="bx bxs-up-arrow"></i>
+							</span>	
+							<p>1</p>
+							<span>
+								<i class="bx bxs-down-arrow"></i>
+							</span>
+						</div>
+						<div>
+							<span class="remove__item"> 
+								<i class="bx bx-trash"></i>
+							</span>
+						</div>
+
+
+					</div> -->
+				</div>
+				<div class="cart__footer">
+					<h3>total: $ <span class="cart__total">0</span></h3>
+					<button class="clear__cart btn">Remove Cart</button>
+				</div>
+			</div>
+		</section>
+		<script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
 		<script src="./assets/js/main.js"></script>
 	</body>
 </html>
